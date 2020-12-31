@@ -12,19 +12,23 @@ input {
 .colors {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 5%;
+}
+
+.colors div, .wave div {
+    margin-top: 16px;
 }
 
 .wave {
     position: absolute;
     top: 20px;
-    left: 20%;
+    left: 40%;
 }
 
 .amplitude {
     position: absolute;
     top: 20px;
-    left: 40%;
+    left: 80%;
 }
 
 .amplitude input {
