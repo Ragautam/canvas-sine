@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sine Wave Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onload()">
+    <canvas></canvas>
+    <div class="colors">
+        <div>
+            Hue: <input onchange="onHueChange(this.value)" value="0" type="range" min="0" max="255" step="1">
+        </div>
+        <div>
+            Saturation: <input onchange="onSatChange(this.value)" value="50" type="range" min="0" max="100" step="1">
+        </div>
+        <div>
+            Lightness: <input onchange="onLightChange(this.value)" value="50" type="range" min="0" max="100" step="1">
+        </div>
+    </div>
+
+    <div class="wave">
+        <div>
+            Wave Position: <input id="wPos" onchange="onPositionChange(this.value)" value="0" type="range" min="0" step="1">
+        </div>
+        <div>
+            Wave Length: <input onchange="onLengthChange(this.value)" value="0.01" type="range" min="-0.01" max="0.01" step="0.001">
+        </div>
+        <div>
+            Wave Frequency: <input onchange="onFrequencyChange(this.value)" value="0.01" type="range" min="-0.01" max="1" step="0.001">
+        </div>
+        <div>
+            Wave Amplitude: <input onchange="onAmplitudeChange(this.value)" value="100" type="range" min="-300" max="300" step="1">
+        </div>
+    </div>
+
+    <div class="amplitude">
+        Sine Amplitude: <input id="sAmp" onchange="onSineAmplitudeClick(this.value)" onclick="onSineAmplitudeClick(this.value)" type="range" value="" min="0" max="1" step="1">
+    </div>
+    <script src="sine.js"></script>
+</body>
+</html>
